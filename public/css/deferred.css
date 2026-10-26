@@ -1,0 +1,43 @@
+/* Deferred styles that are not critical for initial render */
+
+/* Enhanced animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Enhanced hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced shadows */
+.enhanced-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Enhanced gradients */
+.enhanced-gradient {
+  background: linear-gradient(135deg, #2EC4B6 0%, #F08020 100%);
+}
+
+/* Enhanced text styles */
+.enhanced-text {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.025em;
+}
+
+/* Enhanced border effects */
+.enhanced-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+} 
