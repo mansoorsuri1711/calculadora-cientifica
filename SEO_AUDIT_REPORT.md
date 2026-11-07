@@ -6,4 +6,8 @@
 - [x] Blogs limitados a temas SERP de calculadora científica
 - [x] Imágenes públicas de marca aplicadas
 - [x] Schema FAQ / HowTo / SoftwareApplication / Article
-- [ ] Enviar `https://calculadoracientifica.org/sitemap-index.xml` en Search Console
+- [x] Canonical raíz con trailing slash (`SITE_HOME`)
+- [x] Sitemap `lastmod` actualizado (2026-11-07)
+- [x] Eliminados redirects basura → `/` (BMI, parlays, pricing, etc.)
+- [ ] En Search Console: Request indexing de `https://calculadoracientifica.org/`
+- [ ] Reenviar `https://calculadoracientifica.org/sitemap-index.xml` en Search Console

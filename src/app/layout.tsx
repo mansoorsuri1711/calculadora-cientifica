@@ -12,6 +12,7 @@ import { ORGANIZATION_JSON_LD } from "@/lib/appFacts";
 import {
   ASSET_VERSION,
   OG_IMAGE,
+  SITE_HOME,
   SITE_NAME,
   SITE_ORIGIN,
   SITE_TAGLINE,
@@ -88,13 +89,13 @@ export const metadata: Metadata = {
     shortcut: [{ url: `/favicon.ico?v=${ASSET_VERSION}`, type: "image/x-icon" }],
   },
   alternates: {
-    canonical: SITE_ORIGIN,
-    languages: { "es-MX": SITE_ORIGIN, es: SITE_ORIGIN },
+    canonical: SITE_HOME,
+    languages: { "es-MX": SITE_HOME, es: SITE_HOME },
   },
   openGraph: {
     title: "Calculadora Científica Online Gratis — Trig y Logs",
     description: SITE_TAGLINE,
-    url: SITE_ORIGIN,
+    url: SITE_HOME,
     siteName: SITE_NAME,
     locale: "es_MX",
     type: "website",

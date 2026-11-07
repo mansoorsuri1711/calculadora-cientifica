@@ -1,6 +1,8 @@
 export const SITE_NAME = "Calculadora Científica";
 export const SITE_SHORT_NAME = "Calculadora";
 export const SITE_ORIGIN = "https://calculadoracientifica.org";
+/** Prefer trailing slash for the root URL (matches sitemap + GSC). */
+export const SITE_HOME = `${SITE_ORIGIN}/`;
 export const SITE_DOMAIN = "calculadoracientifica.org";
 export const SITE_TAGLINE =
   "Calculadora científica online gratis — trigonometría, logaritmos, fracciones, potencias y notación científica en español de México.";

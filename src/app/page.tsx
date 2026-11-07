@@ -11,6 +11,7 @@ import {
   BRAND_FEATURE_4,
   BRAND_HERO,
   OG_IMAGE,
+  SITE_HOME,
   SITE_NAME,
   SITE_ORIGIN,
   SITE_RATING,
@@ -23,12 +24,20 @@ export const metadata: Metadata = {
   },
   description:
     "Calculadora científica online gratis en español de México. Seno, coseno, logaritmos, potencias, fracciones, grados/radianes y notación científica sin instalar apps.",
-  alternates: { canonical: SITE_ORIGIN },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  alternates: {
+    canonical: SITE_HOME,
+    languages: { "es-MX": SITE_HOME, es: SITE_HOME },
+  },
   openGraph: {
     title: "Calculadora Científica Online Gratis — Trig y Logs",
     description:
       "Resuelve trigonometría, logaritmos y potencias en segundos con nuestra calculadora científica web.",
-    url: SITE_ORIGIN,
+    url: SITE_HOME,
     siteName: SITE_NAME,
     type: "website",
     locale: "es_MX",
@@ -103,7 +112,7 @@ export default function Home() {
       {
         "@type": "WebPage",
         "@id": `${SITE_ORIGIN}/#webpage`,
-        url: `${SITE_ORIGIN}/`,
+        url: SITE_HOME,
         name: "Calculadora Científica Online Gratis — Trig y Logs",
         isPartOf: { "@id": `${SITE_ORIGIN}/#website` },
         inLanguage: "es-MX",
