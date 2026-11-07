@@ -32,25 +32,25 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="border border-white/10 bg-white/5 p-6 md:p-8">
-      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Envíanos un mensaje</h2>
+    <div className="border border-ink/10 bg-ink/5 p-6 md:p-8">
+      <h2 className="mb-6 text-center font-display text-2xl font-bold text-ink">Envíanos un mensaje</h2>
 
       {formSubmitted ? (
-        <div className="mb-6 border border-teal/40 bg-teal/10 p-4 text-center text-white">
+        <div className="mb-6 border border-teal/40 bg-teal/10 p-4 text-center text-ink">
           <p>Gracias por tu mensaje. Te responderemos pronto.</p>
         </div>
       ) : null}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div>
-          <label htmlFor="name" className="mb-1 block text-sm font-medium text-white/85">
+          <label htmlFor="name" className="mb-1 block text-sm font-medium text-ink/85">
             Nombre
           </label>
           <input
             id="name"
             type="text"
-            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-violet ${
-              errors.name ? 'border-pink' : 'border-white/15'
+            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-violet ${
+              errors.name ? 'border-pink' : 'border-ink/15'
             }`}
             placeholder="Tu nombre"
             {...register('name', { required: 'El nombre es obligatorio' })}
@@ -61,14 +61,14 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-medium text-white/85">
+          <label htmlFor="email" className="mb-1 block text-sm font-medium text-ink/85">
             Correo electrónico
           </label>
           <input
             id="email"
             type="email"
-            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-violet ${
-              errors.email ? 'border-pink' : 'border-white/15'
+            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-violet ${
+              errors.email ? 'border-pink' : 'border-ink/15'
             }`}
             placeholder="tu@correo.com"
             {...register('email', {
@@ -85,14 +85,14 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="subject" className="mb-1 block text-sm font-medium text-white/85">
+          <label htmlFor="subject" className="mb-1 block text-sm font-medium text-ink/85">
             Asunto
           </label>
           <input
             id="subject"
             type="text"
-            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-violet ${
-              errors.subject ? 'border-pink' : 'border-white/15'
+            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-violet ${
+              errors.subject ? 'border-pink' : 'border-ink/15'
             }`}
             placeholder="¿En qué podemos ayudarte?"
             {...register('subject', { required: 'El asunto es obligatorio' })}
@@ -103,14 +103,14 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="message" className="mb-1 block text-sm font-medium text-white/85">
+          <label htmlFor="message" className="mb-1 block text-sm font-medium text-ink/85">
             Mensaje
           </label>
           <textarea
             id="message"
             rows={5}
-            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-violet ${
-              errors.message ? 'border-pink' : 'border-white/15'
+            className={`w-full rounded-md border bg-brand-soft px-4 py-2 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-violet ${
+              errors.message ? 'border-pink' : 'border-ink/15'
             }`}
             placeholder="Escribe tu mensaje..."
             {...register('message', {

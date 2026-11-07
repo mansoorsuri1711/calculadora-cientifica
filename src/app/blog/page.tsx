@@ -73,10 +73,10 @@ export default function BlogPage() {
     <>
       <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Blog", href: "/blog" }]} />
       <div className="container mx-auto max-w-5xl px-4 pb-10 pt-8">
-        <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">
+        <h1 className="mb-3 font-display text-3xl font-bold text-ink md:text-4xl">
           Blog de calculadora científica
         </h1>
-        <p className="mb-10 text-lg text-white/80">
+        <p className="mb-10 text-lg text-ink/80">
           Solo temas que la gente busca junto a “calculadora científica”: uso, comparación con la
           básica, trigonometría y notación científica. Sin artículos irrelevantes.
         </p>
@@ -85,7 +85,7 @@ export default function BlogPage() {
             <Link
               key={post.href}
               href={post.href}
-              className="group block overflow-hidden border border-white/10 bg-white/5 transition-colors hover:border-violet/50 hover:bg-white/[0.07] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet"
+              className="group block overflow-hidden border border-ink/10 bg-ink/5 transition-colors hover:border-violet/50 hover:bg-ink/[0.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet"
             >
               <article>
                 <div className="relative aspect-video">
@@ -98,13 +98,13 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="p-5">
-                  <p className="mb-2 text-xs text-white/50">
+                  <p className="mb-2 text-xs text-ink/50">
                     {post.date} · {post.read}
                   </p>
-                  <h2 className="font-display text-xl font-semibold text-white group-hover:text-orange-soft">
+                  <h2 className="font-display text-xl font-semibold text-ink group-hover:text-orange-soft">
                     {post.title}
                   </h2>
-                  <p className="mt-2 text-sm leading-relaxed text-white/70">{post.excerpt}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-ink/70">{post.excerpt}</p>
                 </div>
               </article>
             </Link>

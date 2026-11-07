@@ -12,16 +12,16 @@ module.exports = {
         display: ['var(--font-sora)', 'var(--font-outfit)', 'sans-serif'],
       },
       colors: {
-        // Navy + orange from Calculadora Científica logo
+        // White theme with navy ink + orange accent from logo
         brand: {
-          DEFAULT: '#0B1528',
-          deep: '#060D1A',
-          soft: '#122038',
+          DEFAULT: '#FFFFFF',
+          deep: '#0B1528',
+          soft: '#F5F7FB',
           glow: '#FF7A1A',
         },
-        mist: '#152848',
-        blush: '#0B1528',
-        ink: '#E8EEF8',
+        mist: '#EEF2F8',
+        blush: '#FFFFFF',
+        ink: '#0B1528',
         pink: {
           DEFAULT: '#FF7A1A',
           soft: '#FF9A4D',
@@ -33,25 +33,25 @@ module.exports = {
         },
         violet: {
           DEFAULT: '#FF7A1A',
-          soft: '#FF9A4D',
-          deep: '#E05E00',
+          soft: '#E05E00',
+          deep: '#C24F00',
         },
         orange: {
           DEFAULT: '#FF7A1A',
-          soft: '#FF9A4D',
-          deep: '#E05E00',
+          soft: '#E05E00',
+          deep: '#C24F00',
         },
-        lilac: '#8EB6FF',
+        lilac: '#3B82F6',
         teal: {
           DEFAULT: '#3B82F6',
           deep: '#2563EB',
         },
-        sky: '#8EB6FF',
-        gold: '#FFB020',
-        primary: '#0B1528',
-        secondary: '#122038',
+        sky: '#2563EB',
+        gold: '#D97706',
+        primary: '#FFFFFF',
+        secondary: '#F5F7FB',
         accent: '#FF7A1A',
-        sunrise: '#FFB020',
+        sunrise: '#D97706',
       },
       keyframes: {
         'fade-up': {

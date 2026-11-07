@@ -183,18 +183,18 @@ export default function Home() {
           <h1 className="mb-2 font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             <span className="brand-gradient-text">{SITE_NAME}</span>
           </h1>
-          <p className="mb-6 max-w-2xl font-display text-lg font-semibold leading-snug text-white sm:text-xl md:text-2xl">
+          <p className="mb-6 max-w-2xl font-display text-lg font-semibold leading-snug text-ink sm:text-xl md:text-2xl">
             Online, gratis y lista para trigonometría, logaritmos y potencias
           </p>
 
           <CalculadoraCientifica />
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink/80 sm:text-lg">
             Calculadora científica en español de México: sin apps, sin cuenta y con modo DEG/RAD para
             escuela, prepa y universidad.
           </p>
 
-          <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-white/70 sm:gap-3">
+          <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-ink/70 sm:gap-3">
             <span
               className="inline-flex items-center gap-1.5"
               aria-label={`Calificación ${SITE_RATING.ratingValue} de 5`}
@@ -205,11 +205,11 @@ export default function Home() {
               </span>
               <span>({Number(SITE_RATING.ratingCount).toLocaleString("es-MX")})</span>
             </span>
-            <span className="text-white/40">·</span>
+            <span className="text-ink/40">·</span>
             <span>Gratis</span>
-            <span className="text-white/40">·</span>
+            <span className="text-ink/40">·</span>
             <span>Web</span>
-            <span className="text-white/40">·</span>
+            <span className="text-ink/40">·</span>
             <span>Educación</span>
           </div>
         </div>
@@ -218,28 +218,28 @@ export default function Home() {
       <div className="container mx-auto max-w-6xl px-4 py-12">
         <section className="mb-16 grid gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+            <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
               Calculadora científica online para estudiantes en México
             </h2>
-            <p className="mb-4 text-lg leading-relaxed text-white/80">
-              Una <strong className="text-white">calculadora científica</strong> te permite resolver
+            <p className="mb-4 text-lg leading-relaxed text-ink/80">
+              Una <strong className="text-ink">calculadora científica</strong> te permite resolver
               en segundos lo que en papel tomaría varios minutos: ángulos, potencias, raíces y
               logaritmos. En este sitio la herramienta vive arriba de la página para que practiques
               mientras lees ejemplos reales de secundaria, prepa y primeros semestres de ingeniería.
             </p>
-            <p className="mb-4 leading-relaxed text-white/75">
+            <p className="mb-4 leading-relaxed text-ink/75">
               En Google, herramientas como Desmos, GeoGebra o Symbolab destacan por el teclado, pero
               dejan poco texto útil en español. Aquí combinamos la calculadora con guías claras:
               cuándo usar grados, cómo evitar errores de paréntesis y cómo pasar un resultado a
               notación científica.
             </p>
-            <p className="leading-relaxed text-white/75">
+            <p className="leading-relaxed text-ink/75">
               Si llegaste buscando una calculadora científica gratis, un emulador estilo Casio o una
               opción para celular, el flujo es el mismo: escribe la expresión, elige DEG o RAD y
               pulsa igual. Sin publicidad invasiva ni descarga obligatoria.
             </p>
           </div>
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-ink/10">
             <Image
               src={BRAND_HERO}
               alt="Calculadora científica online mostrando teclado científico y pantalla de resultados"
@@ -253,10 +253,10 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
             Cómo usar esta calculadora científica paso a paso
           </h2>
-          <p className="mb-6 max-w-3xl leading-relaxed text-white/80">
+          <p className="mb-6 max-w-3xl leading-relaxed text-ink/80">
             Las búsquedas de “cómo usar calculadora científica” suelen llevar a videos. Esta versión
             escrita te deja seguir el proceso y probarlo al instante en la misma pestaña.
           </p>
@@ -285,22 +285,22 @@ export default function Home() {
             ].map((step) => (
               <li key={step.n} className="border-t border-violet/40 pt-4">
                 <span className="font-display text-sm font-bold text-teal">{step.n}</span>
-                <h3 className="mt-2 font-display text-xl font-semibold text-white">{step.t}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/70">{step.d}</p>
+                <h3 className="mt-2 font-display text-xl font-semibold text-ink">{step.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink/70">{step.d}</p>
               </li>
             ))}
           </ol>
-          <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
-            <h3 className="mb-2 font-display text-lg font-semibold text-white">
+          <div className="rounded-xl border border-ink/10 bg-ink/[0.03] p-5 sm:p-6">
+            <h3 className="mb-2 font-display text-lg font-semibold text-ink">
               Ejemplo rápido: sin(30°) + log(100)
             </h3>
-            <p className="mb-3 leading-relaxed text-white/75">
+            <p className="mb-3 leading-relaxed text-ink/75">
               En modo DEG escribe <code className="text-orange-soft">sin(30)+log(100)</code>. El seno
               de 30° es 0.5 y log base 10 de 100 es 2, así que el resultado es{" "}
-              <strong className="text-white">2.5</strong>. Si el modo estuviera en RAD, sin(30) ya no
+              <strong className="text-ink">2.5</strong>. Si el modo estuviera en RAD, sin(30) ya no
               sería 0.5: ese es el error más frecuente en exámenes.
             </p>
-            <p className="leading-relaxed text-white/70">
+            <p className="leading-relaxed text-ink/70">
               Más ejemplos en la{" "}
               <Link href="/como-usar" className="text-orange-soft underline hover:no-underline">
                 guía de cómo usar
@@ -318,7 +318,7 @@ export default function Home() {
         </section>
 
         <section className="mb-16 grid gap-10 md:grid-cols-2 md:items-center">
-          <div className="relative order-2 aspect-video overflow-hidden rounded-2xl border border-white/10 md:order-1">
+          <div className="relative order-2 aspect-video overflow-hidden rounded-2xl border border-ink/10 md:order-1">
             <Image
               src={BRAND_FEATURE_2}
               alt="Calculadora científica online para trigonometría y funciones avanzadas"
@@ -329,28 +329,28 @@ export default function Home() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+            <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
               Funciones que cubren el temario escolar
             </h2>
-            <ul className="space-y-3 text-white/80">
+            <ul className="space-y-3 text-ink/80">
               <li>
-                <strong className="text-white">Trigonometría:</strong> sin, cos, tan e inversas (asin,
+                <strong className="text-ink">Trigonometría:</strong> sin, cos, tan e inversas (asin,
                 acos, atan) con control DEG/RAD.
               </li>
               <li>
-                <strong className="text-white">Logaritmos y exponenciales:</strong> ln, log (base 10),
+                <strong className="text-ink">Logaritmos y exponenciales:</strong> ln, log (base 10),
                 exp y potencias con ^.
               </li>
               <li>
-                <strong className="text-white">Álgebra básica:</strong> raíces, valor absoluto,
+                <strong className="text-ink">Álgebra básica:</strong> raíces, valor absoluto,
                 factorial y porcentaje.
               </li>
               <li>
-                <strong className="text-white">Constantes:</strong> π y e listas para fórmulas de
+                <strong className="text-ink">Constantes:</strong> π y e listas para fórmulas de
                 círculos, crecimiento y física.
               </li>
             </ul>
-            <p className="mt-4 leading-relaxed text-white/75">
+            <p className="mt-4 leading-relaxed text-ink/75">
               Detalle completo en{" "}
               <Link href="/funciones" className="text-orange-soft underline hover:no-underline">
                 funciones de la calculadora
@@ -368,10 +368,10 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
             Grados, radianes y notación científica sin confusiones
           </h2>
-          <p className="mb-6 max-w-3xl leading-relaxed text-white/80">
+          <p className="mb-6 max-w-3xl leading-relaxed text-ink/80">
             Tres intenciones de búsqueda aparecen una y otra vez junto a “calculadora científica”:
             convertir grados a radianes, entender notación científica y comparar con la calculadora
             básica. Aquí tienes atajos a cada una.
@@ -403,7 +403,7 @@ export default function Home() {
               <Link
                 key={card.href}
                 href={card.href}
-                className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition hover:border-orange/40"
+                className="group overflow-hidden rounded-2xl border border-ink/10 bg-ink/[0.03] transition hover:border-orange/40"
               >
                 <div className="relative aspect-[16/10]">
                   <Image
@@ -416,8 +416,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-display text-xl font-semibold text-white">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/70">{card.text}</p>
+                  <h3 className="font-display text-xl font-semibold text-ink">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-ink/70">{card.text}</p>
                 </div>
               </Link>
             ))}
@@ -425,21 +425,21 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
             ¿Para quién es esta calculadora científica?
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="font-display text-xl font-semibold text-white">Estudiantes</h3>
-              <p className="mt-3 leading-relaxed text-white/75">
+            <div className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-6">
+              <h3 className="font-display text-xl font-semibold text-ink">Estudiantes</h3>
+              <p className="mt-3 leading-relaxed text-ink/75">
                 Ideal para tareas de álgebra, trigonometría, química y física cuando no tienes la
                 Casio a la mano. Practica en el celular entre clases y verifica resultados antes de
                 entregar.
               </p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="font-display text-xl font-semibold text-white">Docentes y tutores</h3>
-              <p className="mt-3 leading-relaxed text-white/75">
+            <div className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-6">
+              <h3 className="font-display text-xl font-semibold text-ink">Docentes y tutores</h3>
+              <p className="mt-3 leading-relaxed text-ink/75">
                 Proyecta la herramienta en clase, muestra el efecto de DEG vs RAD y comparte las
                 guías del blog para reforzar el uso correcto fuera del salón.
               </p>
@@ -448,7 +448,7 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
-          <h2 className="mb-4 font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-4 font-display text-2xl font-bold text-ink md:text-3xl">
             Ventajas frente a apps y páginas delgadas
           </h2>
           <ul className="grid gap-4 sm:grid-cols-2">
@@ -462,7 +462,7 @@ export default function Home() {
             ].map((item) => (
               <li
                 key={item}
-                className="flex gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 text-white/80"
+                className="flex gap-3 rounded-xl border border-ink/10 bg-ink/[0.02] px-4 py-3 text-ink/80"
               >
                 <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange" aria-hidden />
                 <span>{item}</span>
@@ -472,10 +472,10 @@ export default function Home() {
         </section>
 
         <section className="mb-16 rounded-2xl border border-orange/30 bg-gradient-to-br from-orange/15 to-teal/10 p-6 sm:p-8">
-          <h2 className="mb-3 font-display text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-3 font-display text-2xl font-bold text-ink md:text-3xl">
             Empieza ahora en calculadoracientifica.org
           </h2>
-          <p className="mb-5 max-w-2xl leading-relaxed text-white/80">
+          <p className="mb-5 max-w-2xl leading-relaxed text-ink/80">
             Abre la calculadora científica, prueba sin(30)+log(100) y guarda esta página para tus
             próximas tareas. Si necesitas más práctica, visita el blog o las herramientas
             especializadas.
@@ -489,7 +489,7 @@ export default function Home() {
             </Link>
             <Link
               href="/blog"
-              className="inline-flex rounded-xl border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/5"
+              className="inline-flex rounded-xl border border-ink/20 px-5 py-3 text-sm font-semibold text-ink hover:bg-ink/5"
             >
               Leer guías del blog
             </Link>

@@ -47,9 +47,9 @@ export default function BlogNotacion() {
         ]}
       />
       <article className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
-        <p className="mb-2 text-sm text-white/50">26 de octubre de 2026 · 8 min</p>
-        <h1 className="mb-6 font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
-        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-white/10">
+        <p className="mb-2 text-sm text-ink/50">26 de octubre de 2026 · 8 min</p>
+        <h1 className="mb-6 font-display text-3xl font-bold text-ink md:text-4xl">{title}</h1>
+        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-ink/10">
           <Image
             src={BRAND_FEATURE_4}
             alt="Ejemplos de notación científica en calculadora"
@@ -59,22 +59,22 @@ export default function BlogNotacion() {
             priority
           />
         </div>
-        <div className="space-y-6 text-lg leading-relaxed text-white/80">
+        <div className="space-y-6 text-lg leading-relaxed text-ink/80">
           <p>
-            La <strong className="text-white">notación científica</strong> escribe un número como{" "}
-            <strong className="text-white">a × 10ⁿ</strong>, donde 1 ≤ |a| &lt; 10 (salvo el cero) y n
+            La <strong className="text-ink">notación científica</strong> escribe un número como{" "}
+            <strong className="text-ink">a × 10ⁿ</strong>, donde 1 ≤ |a| &lt; 10 (salvo el cero) y n
             es un entero. Sirve para distancias astronómicas, masas atómicas o resultados muy
             pequeños en laboratorio.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Ejemplos rápidos</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Ejemplos rápidos</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>125000 = 1.25 × 10⁵</li>
             <li>0.00034 = 3.4 × 10⁻⁴</li>
             <li>6.02 × 10²³ (orden del número de Avogadro)</li>
           </ul>
 
-          <h2 className="font-display text-2xl font-semibold text-white">En la calculadora científica</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">En la calculadora científica</h2>
           <p>
             En {SITE_NAME} puedes escribir <code className="text-orange-soft">1.25e+5</code> con la
             tecla EXP o convertir con el{" "}
@@ -84,7 +84,7 @@ export default function BlogNotacion() {
             . Evita confundir la tecla de exponente ^ con la notación e+/e−.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Consejo de verificación</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Consejo de verificación</h2>
           <p>
             Después de convertir, multiplica mentalmente: 1.25 × 100000 debe verse como 125000. Si el
             orden de magnitud no cuadra, revisa el signo del exponente.

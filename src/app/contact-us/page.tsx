@@ -22,8 +22,8 @@ export default function ContactPage() {
     <>
       <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Contacto", href: "/contact-us" }]} />
       <div className="container mx-auto max-w-3xl px-4 pb-10 pt-8">
-        <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">Contacto</h1>
-        <p className="mb-8 text-lg text-white/80">
+        <h1 className="mb-3 font-display text-3xl font-bold text-ink md:text-4xl">Contacto</h1>
+        <p className="mb-8 text-lg text-ink/80">
           ¿Ideas para nuevas funciones, un error en un cálculo o dudas sobre las guías? Escríbenos a{" "}
           <a href={`mailto:${CONTACT_EMAIL}`} className="text-violet-soft underline">
             {CONTACT_EMAIL}

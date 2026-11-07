@@ -62,15 +62,15 @@ export default function ComoUsarPage() {
         ]}
       />
       <article className="container mx-auto max-w-4xl px-4 pb-12 pt-8">
-        <h1 className="mb-4 font-display text-3xl font-bold text-white md:text-4xl">
+        <h1 className="mb-4 font-display text-3xl font-bold text-ink md:text-4xl">
           Cómo usar la calculadora científica
         </h1>
-        <p className="mb-8 text-lg leading-relaxed text-white/80">
+        <p className="mb-8 text-lg leading-relaxed text-ink/80">
           Esta guía resume el flujo correcto para no equivocarte con ángulos, paréntesis ni notación
           científica. Combínala con la herramienta en vivo de {SITE_NAME}.
         </p>
 
-        <div className="relative mb-10 aspect-video overflow-hidden rounded-2xl border border-white/10">
+        <div className="relative mb-10 aspect-video overflow-hidden rounded-2xl border border-ink/10">
           <Image
             src={BRAND_FEATURE_3}
             alt="Estudiante usando la calculadora científica paso a paso"
@@ -82,9 +82,9 @@ export default function ComoUsarPage() {
         </div>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-2xl font-semibold text-white">1. Elige el modo angular</h2>
-          <p className="leading-relaxed text-white/80">
-            En México, la mayoría de problemas de secundaria y prepa usan <strong className="text-white">grados</strong>.
+          <h2 className="mb-3 font-display text-2xl font-semibold text-ink">1. Elige el modo angular</h2>
+          <p className="leading-relaxed text-ink/80">
+            En México, la mayoría de problemas de secundaria y prepa usan <strong className="text-ink">grados</strong>.
             Si tu fórmula de cálculo o física pide radianes, cambia a RAD antes de tocar sin, cos o tan.
             Puedes convertir valores en{" "}
             <Link href="/grados-a-radianes" className="text-orange-soft underline">
@@ -95,8 +95,8 @@ export default function ComoUsarPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-2xl font-semibold text-white">2. Respeta paréntesis y orden</h2>
-          <p className="leading-relaxed text-white/80">
+          <h2 className="mb-3 font-display text-2xl font-semibold text-ink">2. Respeta paréntesis y orden</h2>
+          <p className="leading-relaxed text-ink/80">
             Escribe funciones con paréntesis: <code className="text-orange-soft">sin(45)</code>,{" "}
             <code className="text-orange-soft">log(1000)</code>,{" "}
             <code className="text-orange-soft">sqrt(81)</code>. Para potencias usa{" "}
@@ -106,11 +106,11 @@ export default function ComoUsarPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-2xl font-semibold text-white">3. Usa 2nd, Ans y EXP</h2>
-          <p className="leading-relaxed text-white/80">
-            <strong className="text-white">2nd</strong> cambia senos por arcoseno y similares.{" "}
-            <strong className="text-white">Ans</strong> reutiliza el último resultado.{" "}
-            <strong className="text-white">EXP</strong> escribe notación tipo{" "}
+          <h2 className="mb-3 font-display text-2xl font-semibold text-ink">3. Usa 2nd, Ans y EXP</h2>
+          <p className="leading-relaxed text-ink/80">
+            <strong className="text-ink">2nd</strong> cambia senos por arcoseno y similares.{" "}
+            <strong className="text-ink">Ans</strong> reutiliza el último resultado.{" "}
+            <strong className="text-ink">EXP</strong> escribe notación tipo{" "}
             <code className="text-orange-soft">1.25e+5</code>. Amplía con el{" "}
             <Link href="/blog/como-usar-calculadora-cientifica" className="text-orange-soft underline">
               tutorial del blog
@@ -120,8 +120,8 @@ export default function ComoUsarPage() {
         </section>
 
         <section className="mb-10 rounded-2xl border border-orange/30 bg-orange/10 p-6">
-          <h2 className="mb-2 font-display text-xl font-semibold text-white">Practica ahora</h2>
-          <p className="mb-4 text-white/80">Prueba: sin(30)+cos(60)+log(10)</p>
+          <h2 className="mb-2 font-display text-xl font-semibold text-ink">Practica ahora</h2>
+          <p className="mb-4 text-ink/80">Prueba: sin(30)+cos(60)+log(10)</p>
           <Link
             href="/#calculadora"
             className="inline-flex rounded-xl bg-orange px-5 py-3 text-sm font-bold text-white hover:brightness-110"

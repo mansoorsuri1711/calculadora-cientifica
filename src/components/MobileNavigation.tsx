@@ -47,7 +47,7 @@ function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean
     <button
       type="button"
       onClick={onClick}
-      className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-md text-white hover:bg-white/10 xl:hidden"
+      className="relative z-[60] flex h-10 w-10 items-center justify-center rounded-md text-ink hover:bg-ink/10 xl:hidden"
       aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
       aria-expanded={!!isOpen}
       aria-controls="mobile-nav-panel"
@@ -109,7 +109,7 @@ export default function MobileNavigation() {
             aria-modal="true"
             aria-label="Navegación móvil"
           >
-            <div className="flex items-center justify-between border-b border-white/10 bg-brand-soft/80 px-4 py-3">
+            <div className="flex items-center justify-between border-b border-ink/10 bg-brand-soft/80 px-4 py-3">
               <Link href="/" className="flex min-w-0 items-center gap-2.5" onClick={closeMenu}>
                 <div className="relative h-8 w-8 flex-shrink-0 overflow-hidden rounded-md">
                   <Image
@@ -120,12 +120,12 @@ export default function MobileNavigation() {
                     className="object-contain"
                   />
                 </div>
-                <span className="truncate text-base font-bold text-white">{SITE_SHORT_NAME}</span>
+                <span className="truncate text-base font-bold text-ink">{SITE_SHORT_NAME}</span>
               </Link>
               <button
                 type="button"
                 onClick={closeMenu}
-                className="flex h-10 w-10 items-center justify-center rounded-md text-white hover:bg-white/10"
+                className="flex h-10 w-10 items-center justify-center rounded-md text-ink hover:bg-ink/10"
                 aria-label="Cerrar menú"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6" aria-hidden="true">
@@ -150,8 +150,8 @@ export default function MobileNavigation() {
                             onClick={closeMenu}
                             className={`flex items-center justify-between rounded-lg px-3 py-3 text-[15px] font-medium transition-colors ${
                               active
-                                ? 'bg-violet/20 font-semibold text-white'
-                                : 'text-white/85 hover:bg-white/5'
+                                ? 'bg-violet/15 font-semibold text-orange-deep'
+                                : 'text-ink/85 hover:bg-ink/5'
                             }`}
                           >
                             <span>{item.label}</span>
@@ -167,7 +167,7 @@ export default function MobileNavigation() {
               ))}
             </nav>
 
-            <div className="border-t border-white/10 bg-brand-soft/70 px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <div className="border-t border-ink/10 bg-brand-soft/70 px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
               <Link
                 href="/#calculadora"
                 onClick={closeMenu}

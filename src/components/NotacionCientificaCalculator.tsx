@@ -27,13 +27,13 @@ export default function NotacionCientificaCalculator() {
   }, [raw, coeff, exp, mode]);
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+    <div className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-5 sm:p-6">
       <div className="mb-4 flex flex-wrap gap-2">
         <button
           type="button"
           onClick={() => setMode("to")}
           className={`rounded-lg px-3 py-1.5 text-sm font-semibold ${
-            mode === "to" ? "bg-orange text-white" : "bg-white/10 text-white/70"
+            mode === "to" ? "bg-orange text-white" : "bg-ink/10 text-ink/70"
           }`}
         >
           Decimal → notación
@@ -42,7 +42,7 @@ export default function NotacionCientificaCalculator() {
           type="button"
           onClick={() => setMode("from")}
           className={`rounded-lg px-3 py-1.5 text-sm font-semibold ${
-            mode === "from" ? "bg-orange text-white" : "bg-white/10 text-white/70"
+            mode === "from" ? "bg-orange text-white" : "bg-ink/10 text-ink/70"
           }`}
         >
           Notación → decimal
@@ -51,52 +51,52 @@ export default function NotacionCientificaCalculator() {
 
       {mode === "to" ? (
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-white/70">Número decimal</span>
+          <span className="mb-2 block text-sm font-medium text-ink/70">Número decimal</span>
           <input
             type="number"
             inputMode="decimal"
             value={raw}
             onChange={(e) => setRaw(e.target.value)}
-            className="w-full rounded-xl border border-white/15 bg-[#0B1528] px-4 py-3 text-lg text-white outline-none ring-orange/40 focus:ring-2"
+            className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-lg text-ink outline-none ring-orange/40 focus:ring-2"
           />
         </label>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-2 block text-sm font-medium text-white/70">Coeficiente</span>
+            <span className="mb-2 block text-sm font-medium text-ink/70">Coeficiente</span>
             <input
               type="number"
               inputMode="decimal"
               value={coeff}
               onChange={(e) => setCoeff(e.target.value)}
-              className="w-full rounded-xl border border-white/15 bg-[#0B1528] px-4 py-3 text-lg text-white outline-none ring-orange/40 focus:ring-2"
+              className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-lg text-ink outline-none ring-orange/40 focus:ring-2"
             />
           </label>
           <label className="block">
-            <span className="mb-2 block text-sm font-medium text-white/70">Exponente (10^n)</span>
+            <span className="mb-2 block text-sm font-medium text-ink/70">Exponente (10^n)</span>
             <input
               type="number"
               inputMode="numeric"
               value={exp}
               onChange={(e) => setExp(e.target.value)}
-              className="w-full rounded-xl border border-white/15 bg-[#0B1528] px-4 py-3 text-lg text-white outline-none ring-orange/40 focus:ring-2"
+              className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-lg text-ink outline-none ring-orange/40 focus:ring-2"
             />
           </label>
         </div>
       )}
 
       {converted ? (
-        <div className="mt-5 space-y-2 rounded-xl border border-sky/25 bg-sky/10 p-4 text-sm text-white/85">
+        <div className="mt-5 space-y-2 rounded-xl border border-sky/25 bg-sky/10 p-4 text-sm text-ink/85">
           <p>
             Notación científica:{" "}
             <strong className="text-orange-soft">{converted.display}</strong>
           </p>
           <p>
-            Decimal: <strong className="text-white">{formatScientific(converted.decimal)}</strong>
+            Decimal: <strong className="text-ink">{formatScientific(converted.decimal)}</strong>
           </p>
         </div>
       ) : (
-        <p className="mt-4 text-sm text-rose-300">Revisa los valores ingresados.</p>
+        <p className="mt-4 text-sm text-rose-600">Revisa los valores ingresados.</p>
       )}
     </div>
   );

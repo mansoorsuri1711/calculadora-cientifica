@@ -47,9 +47,9 @@ export default function BlogTrig() {
         ]}
       />
       <article className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
-        <p className="mb-2 text-sm text-white/50">26 de octubre de 2026 · 10 min</p>
-        <h1 className="mb-6 font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
-        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-white/10">
+        <p className="mb-2 text-sm text-ink/50">26 de octubre de 2026 · 10 min</p>
+        <h1 className="mb-6 font-display text-3xl font-bold text-ink md:text-4xl">{title}</h1>
+        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-ink/10">
           <Image
             src={BRAND_FEATURE_3}
             alt="Cálculo de seno coseno y tangente en calculadora científica"
@@ -59,21 +59,21 @@ export default function BlogTrig() {
             priority
           />
         </div>
-        <div className="space-y-6 text-lg leading-relaxed text-white/80">
+        <div className="space-y-6 text-lg leading-relaxed text-ink/80">
           <p>
-            Dominar <strong className="text-white">seno, coseno y tangente</strong> en la calculadora
+            Dominar <strong className="text-ink">seno, coseno y tangente</strong> en la calculadora
             científica es esencial para triángulos rectángulos, ondas y problemas de física. El truco
             no está en memorizar más botones: está en el modo angular correcto.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Valores que debes reconocer</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Valores que debes reconocer</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>sin(30°) = 0.5 · cos(60°) = 0.5 · tan(45°) = 1</li>
             <li>sin(90°) = 1 · cos(0°) = 1</li>
             <li>asin(0.5) en DEG = 30°</li>
           </ul>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Pasos en la calculadora</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Pasos en la calculadora</h2>
           <ol className="list-decimal space-y-2 pl-5">
             <li>Pon DEG si el ángulo viene en grados.</li>
             <li>Escribe sin(, cos( o tan(.</li>
@@ -81,7 +81,7 @@ export default function BlogTrig() {
             <li>Para el ángulo a partir de una razón, usa 2nd → asin/acos/atan.</li>
           </ol>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Errores frecuentes</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Errores frecuentes</h2>
           <p>
             Estar en RAD sin darte cuenta; olvidar paréntesis en expresiones mixtas; usar tan cerca
             de 90° (el valor crece sin límite). Si necesitas pasar el ángulo de un sistema a otro,

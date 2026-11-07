@@ -34,10 +34,10 @@ export default function GradosPage() {
         ]}
       />
       <div className="container mx-auto max-w-4xl px-4 pb-12 pt-8">
-        <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">
+        <h1 className="mb-3 font-display text-3xl font-bold text-ink md:text-4xl">
           Conversor de grados a radianes
         </h1>
-        <p className="mb-8 text-lg leading-relaxed text-white/80">
+        <p className="mb-8 text-lg leading-relaxed text-ink/80">
           Antes de usar sin, cos o tan en tu{" "}
           <Link href="/" className="text-orange-soft underline">
             calculadora científica
@@ -49,7 +49,7 @@ export default function GradosPage() {
         <GradosRadianesCalculator />
 
         <section className="mt-12 grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-ink/10">
             <Image
               src={BRAND_FEATURE_3}
               alt="Conversión de grados a radianes para trigonometría"
@@ -59,14 +59,14 @@ export default function GradosPage() {
             />
           </div>
           <div>
-            <h2 className="mb-3 font-display text-2xl font-semibold text-white">Fórmulas</h2>
-            <p className="mb-3 leading-relaxed text-white/80">
-              <strong className="text-white">radianes = grados × π / 180</strong>
+            <h2 className="mb-3 font-display text-2xl font-semibold text-ink">Fórmulas</h2>
+            <p className="mb-3 leading-relaxed text-ink/80">
+              <strong className="text-ink">radianes = grados × π / 180</strong>
             </p>
-            <p className="mb-3 leading-relaxed text-white/80">
-              <strong className="text-white">grados = radianes × 180 / π</strong>
+            <p className="mb-3 leading-relaxed text-ink/80">
+              <strong className="text-ink">grados = radianes × 180 / π</strong>
             </p>
-            <p className="leading-relaxed text-white/75">
+            <p className="leading-relaxed text-ink/75">
               Ejemplo: 180° = π rad · 90° = π/2 rad · π rad = 180°. Luego vuelve a la{" "}
               <Link href="/calculadora-trigonometrica" className="text-orange-soft underline">
                 calculadora trigonométrica

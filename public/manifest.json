@@ -4,8 +4,8 @@
   "description": "Calculadora científica online gratis con trigonometría, logaritmos, potencias y notación científica.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B1528",
-  "theme_color": "#FF7A1A",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "lang": "es-MX",
   "icons": [
     {

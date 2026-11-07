@@ -34,12 +34,12 @@ export default function NotacionPage() {
         ]}
       />
       <div className="container mx-auto max-w-4xl px-4 pb-12 pt-8">
-        <h1 className="mb-3 font-display text-3xl font-bold text-white md:text-4xl">
+        <h1 className="mb-3 font-display text-3xl font-bold text-ink md:text-4xl">
           Conversor de notación científica
         </h1>
-        <p className="mb-8 text-lg leading-relaxed text-white/80">
+        <p className="mb-8 text-lg leading-relaxed text-ink/80">
           La notación científica expresa números muy grandes o muy pequeños como{" "}
-          <strong className="text-white">a × 10ⁿ</strong>. Úsala en química, física y al trabajar con
+          <strong className="text-ink">a × 10ⁿ</strong>. Úsala en química, física y al trabajar con
           la tecla EXP de la calculadora.
         </p>
 
@@ -47,14 +47,14 @@ export default function NotacionPage() {
 
         <section className="mt-12 grid gap-8 md:grid-cols-2 md:items-center">
           <div>
-            <h2 className="mb-3 font-display text-2xl font-semibold text-white">
+            <h2 className="mb-3 font-display text-2xl font-semibold text-ink">
               Cómo escribirla en la calculadora
             </h2>
-            <p className="mb-3 leading-relaxed text-white/80">
+            <p className="mb-3 leading-relaxed text-ink/80">
               En {SITE_NAME} puedes escribir <code className="text-orange-soft">1.25e+5</code> o
               usar EXP después del coeficiente. El resultado 125000 equivale a 1.25 × 10⁵.
             </p>
-            <p className="leading-relaxed text-white/75">
+            <p className="leading-relaxed text-ink/75">
               Explicación completa en el{" "}
               <Link href="/blog/notacion-cientifica-explicada" className="text-orange-soft underline">
                 artículo de notación científica
@@ -66,7 +66,7 @@ export default function NotacionPage() {
               .
             </p>
           </div>
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-ink/10">
             <Image
               src={BRAND_FEATURE_4}
               alt="Conversor de notación científica en calculadora online"

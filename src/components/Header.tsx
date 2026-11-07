@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-brand/85 py-2 px-3 backdrop-blur-md sm:py-3 sm:px-4 md:px-8">
+    <header className="sticky top-0 z-40 border-b border-ink/10 bg-brand/85 py-2 px-3 backdrop-blur-md sm:py-3 sm:px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-center gap-3">
         <Link href="/" className="flex items-center min-w-0">
           <div className="relative h-8 w-8 sm:h-9 sm:w-9 mr-2 flex-shrink-0">
@@ -39,7 +39,7 @@ export default function Header() {
               priority
             />
           </div>
-          <span className="truncate font-display text-sm sm:text-base md:text-lg font-bold leading-tight text-white">
+          <span className="truncate font-display text-sm sm:text-base md:text-lg font-bold leading-tight text-ink">
             {SITE_NAME}
           </span>
         </Link>
@@ -49,8 +49,8 @@ export default function Header() {
             <Link
               key={href}
               href={href}
-              className={`relative font-medium transition-colors pb-1 group text-sm text-white/80 ${
-                isActive(href) ? 'font-semibold text-white' : 'hover:text-violet-soft'
+              className={`relative font-medium transition-colors pb-1 group text-sm text-ink/80 ${
+                isActive(href) ? 'font-semibold text-ink' : 'hover:text-violet-soft'
               }`}
             >
               {label}

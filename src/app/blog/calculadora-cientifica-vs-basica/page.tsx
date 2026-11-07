@@ -47,9 +47,9 @@ export default function BlogVsBasica() {
         ]}
       />
       <article className="container mx-auto max-w-3xl px-4 pb-12 pt-8">
-        <p className="mb-2 text-sm text-white/50">26 de octubre de 2026 · 9 min</p>
-        <h1 className="mb-6 font-display text-3xl font-bold text-white md:text-4xl">{title}</h1>
-        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-white/10">
+        <p className="mb-2 text-sm text-ink/50">26 de octubre de 2026 · 9 min</p>
+        <h1 className="mb-6 font-display text-3xl font-bold text-ink md:text-4xl">{title}</h1>
+        <div className="relative mb-8 aspect-video overflow-hidden rounded-2xl border border-ink/10">
           <Image
             src={BRAND_FEATURE_2}
             alt="Comparación entre calculadora científica y calculadora básica"
@@ -59,28 +59,28 @@ export default function BlogVsBasica() {
             priority
           />
         </div>
-        <div className="space-y-6 text-lg leading-relaxed text-white/80">
+        <div className="space-y-6 text-lg leading-relaxed text-ink/80">
           <p>
-            La pregunta <strong className="text-white">calculadora científica vs básica</strong>{" "}
+            La pregunta <strong className="text-ink">calculadora científica vs básica</strong>{" "}
             aparece cuando compras tu primera herramienta para la escuela o cuando descubres que la
             del celular “de siempre” no tiene seno ni logaritmo.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Qué hace cada una</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Qué hace cada una</h2>
           <p>
-            La <strong className="text-white">básica</strong> cubre suma, resta, multiplicación,
+            La <strong className="text-ink">básica</strong> cubre suma, resta, multiplicación,
             división y a veces porcentaje o raíz cuadrada simple. La{" "}
-            <strong className="text-white">científica</strong> agrega trigonometría, logaritmos,
+            <strong className="text-ink">científica</strong> agrega trigonometría, logaritmos,
             potencias, factoriales, constantes (π, e) y modos DEG/RAD.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Cuándo te alcanza la básica</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Cuándo te alcanza la básica</h2>
           <p>
             Aritmética de primaria, totales de una lista, propinas o fracciones sencillas convertidas
             a decimal. Si tu materia no pide ángulos ni “elevar a”, la básica basta.
           </p>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Cuándo necesitas la científica</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Cuándo necesitas la científica</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>Trigonometría y geometría con senos/cosenos</li>
             <li>Química con notación científica y logaritmos (pH)</li>
@@ -88,7 +88,7 @@ export default function BlogVsBasica() {
             <li>Álgebra con raíces, exponentes y factoriales</li>
           </ul>
 
-          <h2 className="font-display text-2xl font-semibold text-white">Opción online</h2>
+          <h2 className="font-display text-2xl font-semibold text-ink">Opción online</h2>
           <p>
             No siempre hace falta comprar hardware el mismo día. Prueba la{" "}
             <Link href="/" className="text-orange-soft underline">

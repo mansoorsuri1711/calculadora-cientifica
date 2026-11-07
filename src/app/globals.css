@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 232, 238, 248;
-  --background-start-rgb: 11, 21, 40;
-  --background-end-rgb: 6, 13, 26;
+  --foreground-rgb: 11, 21, 40;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 245, 247, 251;
   --accent: #ff7a1a;
-  --brand: #0b1528;
+  --brand: #ffffff;
   --pink: #ff7a1a;
   --violet: #ff7a1a;
-  --mint: #8eb6ff;
+  --mint: #3b82f6;
   --gold: #ffb020;
-  --forest: #152848;
-  color-scheme: dark;
-  background-color: #0b1528;
+  --forest: #eef2f8;
+  color-scheme: light;
+  background-color: #ffffff;
 }
 
 html {
-  background-color: #0b1528;
+  background-color: #ffffff;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #0b1528;
-  background: #0b1528;
+  background-color: #ffffff;
+  background: #ffffff;
 }
 
 img {
@@ -71,16 +71,16 @@ footer {
 }
 
 .site-atmosphere {
-  background-color: #0b1528;
+  background-color: #ffffff;
   background-image:
-    radial-gradient(ellipse 90% 60% at 12% -10%, rgba(255, 122, 26, 0.16), transparent 55%),
-    radial-gradient(ellipse 80% 50% at 90% 0%, rgba(59, 130, 246, 0.14), transparent 52%),
-    radial-gradient(ellipse 70% 45% at 50% 110%, rgba(255, 176, 32, 0.06), transparent 55%),
-    linear-gradient(180deg, #122038 0%, #0b1528 40%, #060d1a 100%);
+    radial-gradient(ellipse 90% 60% at 12% -10%, rgba(255, 122, 26, 0.1), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 90% 0%, rgba(59, 130, 246, 0.08), transparent 52%),
+    radial-gradient(ellipse 70% 45% at 50% 110%, rgba(255, 176, 32, 0.05), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, #f7f9fc 45%, #eef2f8 100%);
 }
 
 .brand-gradient-text {
-  background: linear-gradient(120deg, #ff9a4d 0%, #ff7a1a 40%, #8eb6ff 100%);
+  background: linear-gradient(120deg, #ff9a4d 0%, #ff7a1a 40%, #3b82f6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

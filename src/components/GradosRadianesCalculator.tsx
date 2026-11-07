@@ -22,10 +22,10 @@ export default function GradosRadianesCalculator() {
   }, [deg, rad, lastEdited]);
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+    <div className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-5 sm:p-6">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-white/70">Grados (°)</span>
+          <span className="mb-2 block text-sm font-medium text-ink/70">Grados (°)</span>
           <input
             type="number"
             inputMode="decimal"
@@ -34,11 +34,11 @@ export default function GradosRadianesCalculator() {
               setDeg(e.target.value);
               setLastEdited("deg");
             }}
-            className="w-full rounded-xl border border-white/15 bg-[#0B1528] px-4 py-3 text-lg text-white outline-none ring-orange/40 focus:ring-2"
+            className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-lg text-ink outline-none ring-orange/40 focus:ring-2"
           />
         </label>
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-white/70">Radianes (rad)</span>
+          <span className="mb-2 block text-sm font-medium text-ink/70">Radianes (rad)</span>
           <input
             type="number"
             inputMode="decimal"
@@ -47,24 +47,24 @@ export default function GradosRadianesCalculator() {
               setRad(e.target.value);
               setLastEdited("rad");
             }}
-            className="w-full rounded-xl border border-white/15 bg-[#0B1528] px-4 py-3 text-lg text-white outline-none ring-orange/40 focus:ring-2"
+            className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-lg text-ink outline-none ring-orange/40 focus:ring-2"
           />
         </label>
       </div>
 
       {result ? (
-        <div className="mt-5 rounded-xl border border-orange/30 bg-orange/10 p-4 text-sm leading-relaxed text-white/85">
+        <div className="mt-5 rounded-xl border border-orange/30 bg-orange/10 p-4 text-sm leading-relaxed text-ink/85">
           <p>
-            <strong className="text-white">{formatScientific(result.deg)}°</strong>
+            <strong className="text-ink">{formatScientific(result.deg)}°</strong>
             {" = "}
             <strong className="text-orange-soft">{formatScientific(result.rad)} rad</strong>
           </p>
-          <p className="mt-2 text-white/60">
+          <p className="mt-2 text-ink/60">
             Fórmulas: rad = grados × π / 180 · grados = rad × 180 / π
           </p>
         </div>
       ) : (
-        <p className="mt-4 text-sm text-rose-300">Ingresa un número válido.</p>
+        <p className="mt-4 text-sm text-rose-600">Ingresa un número válido.</p>
       )}
     </div>
   );

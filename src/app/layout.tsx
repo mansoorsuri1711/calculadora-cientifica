@@ -39,7 +39,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#0B1528",
+  themeColor: "#FFFFFF",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
@@ -135,16 +135,16 @@ export default function RootLayout({
       lang="es-MX"
       suppressHydrationWarning
       className={`${outfit.variable} ${sora.variable}`}
-      style={{ backgroundColor: "#0B1528", colorScheme: "dark" }}
+      style={{ backgroundColor: "#FFFFFF", colorScheme: "light" }}
     >
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#0B1528" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="theme-color" content="#FFFFFF" />
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "html,body{background-color:#0B1528!important;color-scheme:dark}#__next,main{background-color:transparent}",
+              "html,body{background-color:#FFFFFF!important;color-scheme:light}#__next,main{background-color:transparent}",
           }}
         />
         <link rel="icon" href={`/favicon.ico?v=${ASSET_VERSION}`} type="image/x-icon" sizes="48x48" />
@@ -161,7 +161,7 @@ export default function RootLayout({
       </head>
       <body
         className="font-sans antialiased text-ink min-h-screen flex flex-col bg-brand site-atmosphere"
-        style={{ backgroundColor: "#0B1528" }}
+        style={{ backgroundColor: "#FFFFFF" }}
         suppressHydrationWarning
       >
         <MobileMenuProvider>

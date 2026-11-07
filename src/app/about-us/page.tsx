@@ -25,7 +25,7 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Nosotros", href: "/about-us" }]} />
       <div className="container mx-auto max-w-4xl px-4 pb-10 pt-8">
         <div className="mb-10 flex flex-col items-start gap-8 md:flex-row">
-          <div className="relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-brand-soft">
+          <div className="relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-2xl border border-ink/10 bg-brand-soft">
             <Image
               src={BRAND_LOGO}
               alt="Logo de Calculadora Científica"
@@ -36,20 +36,20 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <h1 className="mb-4 font-display text-3xl font-bold text-white md:text-4xl">
+            <h1 className="mb-4 font-display text-3xl font-bold text-ink md:text-4xl">
               Sobre {SITE_NAME}
             </h1>
-            <p className="text-lg leading-relaxed text-white/80">
+            <p className="text-lg leading-relaxed text-ink/80">
               Somos un sitio educativo enfocado en una sola cosa: ofrecerte una{" "}
-              <strong className="text-white">calculadora científica online</strong> clara, rápida y
+              <strong className="text-ink">calculadora científica online</strong> clara, rápida y
               acompañada de guías en español de México. Operamos en{" "}
-              <strong className="text-white">{SITE_DOMAIN}</strong>.
+              <strong className="text-ink">{SITE_DOMAIN}</strong>.
             </p>
           </div>
         </div>
 
-        <section className="mb-10 space-y-4 leading-relaxed text-white/80">
-          <h2 className="font-display text-2xl font-semibold text-white">Nuestra misión</h2>
+        <section className="mb-10 space-y-4 leading-relaxed text-ink/80">
+          <h2 className="font-display text-2xl font-semibold text-ink">Nuestra misión</h2>
           <p>
             Muchas páginas del SERP muestran solo un teclado embebido o empujan a comprar hardware.
             Nosotros combinamos la herramienta con contenido que responde lo que realmente buscan
@@ -67,8 +67,8 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-2xl font-semibold text-white">Qué encontrarás</h2>
-          <ul className="list-disc space-y-2 pl-5 text-white/80">
+          <h2 className="mb-3 font-display text-2xl font-semibold text-ink">Qué encontrarás</h2>
+          <ul className="list-disc space-y-2 pl-5 text-ink/80">
             <li>
               <Link href="/" className="text-orange-soft underline">
                 Calculadora científica gratis
